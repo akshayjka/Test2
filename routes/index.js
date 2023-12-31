@@ -10,7 +10,7 @@ const axios = require('axios');
 
 
 
-mongoose.connect('mongodb+srv://akshayjai19001900:Akshay_2001@cluster0.fy17wn5.mongodb.net/Cloud-Project', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://akshayjai19001900:Akshay_2001@cluster0.fy17wn5.mongodb.net/Cloud-Project.Users', { useNewUrlParser: true, useUnifiedTopology: true });
 // mongoose.connect('mongodb://localhost:27017/CRM', { useNewUrlParser: true, useUnifiedTopology: true });
 
 
