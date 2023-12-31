@@ -9,7 +9,6 @@ const Grid = require('gridfs-stream');
 
 
 /* GET users listing. */
-mongoose.connect('mongodb+srv://akshayjai19001900:Akshay_2001@cluster0.fy17wn5.mongodb.net/CRM', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 // express.use(cors());
 
