@@ -1,5 +1,5 @@
 var express = require('express');
-const mongoose = require('mongoose');
+const mongoose = require('./db');
 var router = express.Router();
 const cors = require('cors');
 const multer = require('multer');
@@ -9,13 +9,13 @@ const Grid = require('gridfs-stream');
 
 
 /* GET users listing. */
-const db = mongoose.connection;
-// express.use(cors());
+// const db = mongoose.connection;
+// // express.use(cors());
 
-db.on('error', console.error.bind(console, 'MongoDB connection error:'));
-db.once('open', () => {
-  console.log('Connected to MongoDB');
-});
+// db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+// db.once('open', () => {
+//   console.log('Connected to MongoDB');
+// });
 
 const imageSchema = new mongoose.Schema({
   data: Buffer,

@@ -30,7 +30,7 @@ app.use('/users', usersRouter);
 //   optionSuccessStatus: 200
 // };
 app.use(cors());
-mongoose.connect('mongodb+srv://akshayjai19001900:Akshay_2001@cluster0.fy17wn5.mongodb.net/CRM', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://akshayjai19001900:Akshay_2001@cluster0.fy17wn5.mongodb.net/CRM');
 
 app.use((req, res, next) => { res.header('Access-Control-Allow-Origin', 'http://localhost:4200/login'); res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE'); res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization'); res.header('Access-Control-Allow-Credentials', 'true'); next(); });
 
