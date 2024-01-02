@@ -146,8 +146,8 @@ const [latitude, longitude] = locationData.loc.split(',');
 // TO SAVE THE LOCATION DETAILS...............
 
 const locationSchema = new mongoose.Schema({
-  latitude: Number,
-  longitude: Number,
+  latitude1: Number,
+  longitude1: Number,
 });
 
 const Location = mongoose.model('Location', locationSchema);
